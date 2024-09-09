@@ -7,9 +7,9 @@ int main()
    GlobalConfig::Get()
      .setLevel(Levels::kTrace)
      .setFormatter(formatter::colorfulFormatter);
-   MALG_TRACE("hello malog4cpp");
-   MALG_DEBUG("hello malog4cpp");
-   MALG_INFO("hello malog4cpp");
-   MALG_WARN("hello malog4cpp");
-   MALG_ERROR("hello malog4cpp");
+   MALG_TRACE("hello MyAsyncLog");
+   MALG_DEBUG("hello MyAsyncLog");
+   MALG_INFO("hello MyAsyncLog");
+   MALG_WARN("hello MyAsyncLog");
+   MALG_ERROR("hello MyAsyncLog");
 }

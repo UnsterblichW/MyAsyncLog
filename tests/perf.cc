@@ -6,7 +6,7 @@ using namespace malog;
 
 void log_n_times(int n)
 {
-   for (int i = 0; i < n; i++) { Log::info("hello malog4cpp"); }
+   for (int i = 0; i < n; i++) { Log::info("hello MyAsyncLog"); }
 }
 
 int main()

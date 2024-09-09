@@ -3,10 +3,10 @@ using namespace malog;
 
 int main()
 {
-   Log::trace("hello malog4cpp");
-   Log::debug("hello malog4cpp");
-   Log::info("hello malog4cpp");
-   Log::warn("hello malog4cpp");
-   Log::error("hello malog4cpp");
-   Log::fatal("hello malog4cpp");
+   Log::trace("hello MyAsyncLog");
+   Log::debug("hello MyAsyncLog");
+   Log::info("hello MyAsyncLog");
+   Log::warn("hello MyAsyncLog");
+   Log::error("hello MyAsyncLog");
+   Log::fatal("hello MyAsyncLog");
 }

@@ -11,7 +11,7 @@
     "fmt_string:仅当formatter选择custom后用于设定自定义的formatter，对应的数据表示如下：%n:name %T:time,%t:tid,%F:filepath,%f:func,%e:error info,%L:long levelText,%l:short levelText,%v:message ,%c color start %C color end"
   ],
   "malog": {
-    "name": "malog4cpp",
+    "name": "MyAsyncLog",
     "flag": "default+tid+short_file+func",
     "flush_interval": 3,
     "formatter": "default",

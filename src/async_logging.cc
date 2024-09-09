@@ -191,7 +191,7 @@ void AsyncLogging::thread_worker()
          }
 
          buffersToWrite.clear();
-         output.flush();
+         // output.flush();
       }
       output.flush();
    }
