@@ -21,7 +21,7 @@ endif()
 
 include(${PROJECT_SOURCE_DIR}/dependencies/fetch.cmake)
 
-option(ENABLE_MALG_TEST "Build unittest." OFF)
+option(ENABLE_MALG_TEST "Build unittest." ON)
 option(ENABLE_MALG_EXAMPLE "Build examples." ON)
 
 file(GLOB SRC ${PROJECT_SOURCE_DIR}/src/*.cc)
