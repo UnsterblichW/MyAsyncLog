@@ -27,7 +27,7 @@
 5. 本项目使用CMake配置项目，且支持通过CMake自动拉取所需的依赖项目，对用户来说可以实现极其方便的安装和引入。
 
 ## 性能
-* 同步输出一条日志的延迟只需 `180ns` ，异步只需 `120ns`，是 spdlog 至少4倍的性能。
+* 异步输出一条日志的延迟只需 `120ns`，是 spdlog 至少4倍的性能。
 对于benchmark，可以参考[tests/bench_start.cc](https://github.com/UnsterblichW/MyAsyncLog/blob/master/tests/bench_start.cc)
 
 # 安装和使用
