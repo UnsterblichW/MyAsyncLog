@@ -3,7 +3,8 @@
 - [MyAsyncLog简介](#myasynclog简介)
   - [功能概述](#功能概述)
   - [性能](#性能)
-- [安装和使用](#安装和使用)
+- [安装方法](#安装方法)
+- [使用方法](#使用方法)
 <!-- TOC -->
 
 # MyAsyncLog简介
@@ -30,7 +31,7 @@
 * 异步输出一条日志的延迟只需 `120ns`，是 spdlog 至少4倍的性能。
 对于benchmark，可以参考[tests/bench_start.cc](https://github.com/UnsterblichW/MyAsyncLog/blob/master/tests/bench_start.cc)
 
-# 安装和使用
+# 安装方法
 以下两种方式任选其一即可
 * Method 1：用cmake中的 `FetchContent` 模块将本项目引入目标工程中
   1. 先引入，CMake代码如下：
@@ -38,7 +39,7 @@
         include(FetchContent)
         FetchContent_Declare(
                 MyAsyncLog
-                GIT_REPOSITORY https://github.com/ACking-you/MyAsyncLog.git
+                GIT_REPOSITORY https://github.com/UnsterblichW/MyAsyncLog.git
                 GIT_TAG origin/fetch
                 GIT_SHALLOW TRUE)
         FetchContent_MakeAvailable(MyAsyncLog)
@@ -56,3 +57,4 @@
         ```cmake
         target_link_libraries(target  malog)
         ```
+# 使用方法
