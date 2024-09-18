@@ -65,7 +65,7 @@
    * 本日志库的日志级别从低到高依次是`trace`、`debug` 、`info` 、`warn` 、`error` 、`fatal`，日志库的默认级别是`debug`，当前消息的日志级别如果低于日志库的默认级别，日志将不会被输出；
 2. 使用宏定义`MALG_[loglevel]`
    * `example/simple3.cc`和`example/simple4.cc`中演示了如何使用宏定义来输出日志，`setFilepath("../log/")` 指定了输出文件的文件夹为上一层级的 log 文件夹。
-   * 使用宏之前，`需要在 #include<elog/logger.h>` 之前定义 `ENABLE_ELG_LOG` 宏。
+   * 使用宏之前，需要在 `#include<elog/logger.h>` 之前定义 `ENABLE_ELG_LOG` 宏。
    * 如果需要禁用输出到控制台，则只需要添加下列配置：`GlobalConfig::Get().enableConsole(false)` 。同理如果不需要输出到文件，则需要保持 `log_filepath` 的值为默认值 `nullptr` 即可。
 3. 自定义`formatter`
     `formatter`是一个用于控制格式化输出的接口实现，本日志库内部已经实现的`formatter`有如下几种：
@@ -100,6 +100,6 @@
 # 技术参考和外部依赖
 * 多线程异步日志的核心类`AsyncLogging`，借鉴了[`muduo`](https://github.com/chenshuo/muduo)网络库中的日志设计，采用了其中对于日志库的[双缓冲](https://github.com/chenshuo/muduo/blob/master/muduo/base/AsyncLogging.h)的设计
 * `formatter`的设计是延用[`fmt`](https://github.com/fmtlib/fmt)库的设计思路
-* json配置的读取使用了[ejson4cpp](https://gitee.com/acking-you/ejson4cpp.git)
+* json配置的读取使用了[`ejson4cpp`](https://gitee.com/acking-you/ejson4cpp.git)
 * 为了让C++11支持类似C++17那样的`string_view`引入了[`string-view-lite`](https://github.com/martinmoene/string-view-lite)这个库
-* 在性能测试和单元测试中使用了[`doctest`](https://github.com/doctest/doctest.git)和[`nanobench`](https://github.com/martinus/nanobench.git)
+* 在单元测试和性能测试中使用了[`doctest`](https://github.com/doctest/doctest.git)和[`nanobench`](https://github.com/martinus/nanobench.git)
